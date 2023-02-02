@@ -12,4 +12,10 @@
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>
   </div>
+  <% if product.quantity == 0 %>
+  <aside class="sold_out">
+  <p>SOLD OUT!</p>
+  </aside>
+  <% end %>
+
 </article>
